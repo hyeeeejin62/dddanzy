@@ -43,8 +43,8 @@ h1 span{color:#FF9898;}
 .profit-left{flex:1;display:flex;flex-direction:column;gap:8px;min-width:0;}
 .profit-inline-row{display:flex;align-items:center;justify-content:space-between;gap:6px;}
 .profit-icon{font-size:0.95rem;flex-shrink:0;}
-.profit-label-inline{font-size:11px;color:#888;flex-shrink:0;font-weight:normal;display:flex;align-items:center;gap:5px;}
-.profit-value-inline{font-size:13px;font-weight:normal;text-align:right;padding-right:8px;}
+.profit-label-inline{font-size:14px;color:#888;flex-shrink:0;font-weight:normal;display:flex;align-items:center;gap:5px;}
+.profit-value-inline{font-size:16px;font-weight:normal;text-align:right;padding-right:8px;}
 .donut-wrap{position:relative;width:130px;height:130px;flex-shrink:0;}
 .donut-center{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;}
 .donut-pct{font-size:1.5rem;color:#FF9898;}
@@ -53,8 +53,11 @@ h1 span{color:#FF9898;}
 /* ---- 목표 설정 ---- */
 .goal-row{display:flex;gap:8px;align-items:center;}
 .goal-row label{font-size:12px;white-space:nowrap;}
-.ifield{border:1.5px solid #FFD586;border-radius:8px;padding:6px 10px;font-size:13px;color:#333;background:#fff;outline:none;width:100%;text-align:left;-webkit-appearance:none;appearance:none;}
+.ifield{border:1.5px solid #FFD586;border-radius:8px;padding:6px 10px;font-size:13px;color:#333;background:#fff;outline:none;width:100%;text-align:left;-webkit-appearance:none;appearance:none;height:38px;box-sizing:border-box;}
 input[type="date"].ifield{text-align:left;display:block;}
+input[type="number"].ifield::-webkit-inner-spin-button,
+input[type="number"].ifield::-webkit-outer-spin-button{-webkit-appearance:none;margin:0;}
+input[type="number"].ifield{-moz-appearance:textfield;}
 .ifield:focus,.ifield:hover{border-color:#FF9898;}
 .ifield::placeholder{color:#bbb;}
 .pink-btn{background:#FF9898;color:#fff;border:none;border-radius:8px;padding:7px 14px;font-size:13px;cursor:pointer;white-space:nowrap;}
